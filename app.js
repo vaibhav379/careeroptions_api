@@ -3,7 +3,7 @@ const app = express();
 const router = express.Router();
 var cors = require('cors');
 const routes = require('./routes/routes');
-const port = 3030;
+const port = 8080;
 
 app.use(cors());
 app.use(express.json());
