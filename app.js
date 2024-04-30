@@ -5,6 +5,11 @@ var cors = require('cors');
 const routes = require('./routes/routes');
 const port = 8080;
 
+
+process.on('uncaughtException', (error) => {
+    console.log(error);
+  });
+
 app.use(cors());
 app.use(express.json());
 app.use(router);
